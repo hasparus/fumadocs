@@ -67,6 +67,7 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
       tableOfContent={{
         style: 'clerk',
       }}
+      breadcrumb={{ includeRoot: true }}
     >
       <h1 className="text-[1.75em] font-semibold">{page.data.title}</h1>
       <p className="text-lg text-fd-muted-foreground mb-2">{page.data.description}</p>
